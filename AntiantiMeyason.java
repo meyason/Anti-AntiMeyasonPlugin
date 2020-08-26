@@ -16,6 +16,7 @@ public class AntiantiMeyason extends PluginBase implements Listener {
     public void AAM(PlayerChatEvent event){
         String chat = event.getMessage();
         if(chat.equals("めやそんぶす")){
+            event.setCancelled();
             this.getServer().broadcastMessage("はったおすぞ");
         }
     }
